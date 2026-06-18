@@ -32,13 +32,13 @@ To build an interactive multiple-choice quiz that demonstrates core front-end we
  
 ## Project Structure
  
-The entire application is a single self-contained file:
+The application is split into three separate files, all kept in the same folder:
  
 ```
-quiz-app.html
-├── <style>   — CSS: layout, responsive rules, state classes
-├── HTML      — Three screen divs: Start, Quiz, Results
-└── <script>  — JS: data array, state variables, all logic
+quiz-app/
+├── index.html    — Page structure and three screen sections (Start, Quiz, Results)
+├── style.css     — All styling: layout, responsive rules, and visual state classes
+└── script.js     — All logic: question data, state variables, timer, and score calculation
 ```
  
 ---
@@ -47,7 +47,7 @@ quiz-app.html
  
 ### Option 1 — Open Directly (Simplest)
  
-1. Download or save `quiz-app.html` to your computer.
+1. Download or save `index.html` to your computer.
 2. Double-click the file to open it in your browser.
 3. Click **Start Quiz** to begin.
 ### Option 2 — VS Code Live Server
@@ -56,4 +56,4 @@ quiz-app.html
 2. Install the **Live Server** extension if not already installed.
 3. Right-click `quiz-app.html` in the Explorer panel.
 4. Select **Open with Live Server**.
-5. The app will open at `http://127.0.0.1:5500/quiz-app.html`.
+5. The app will open at `http://127.0.0.1:5500/index.html`.
