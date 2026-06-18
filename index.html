@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+
+  <!-- START SCREEN -->
+  <div id="startScreen">
+    <h1>Quick Quiz</h1>
+    <p class="subtitle">Test your web development knowledge</p>
+    <ul class="info-list">
+      <li>5 multiple-choice questions</li>
+      <li>15 seconds per question</li>
+      <li>Score and feedback shown at the end</li>
+    </ul>
+    <button class="btn-primary" onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div id="quizScreen">
+    <div class="header-bar">
+      <span id="questionCounter">Question 1 of 5</span>
+      <span class="timer-badge" id="timerDisplay">15s</span>
+    </div>
+
+    <div class="progress-track">
+      <div class="progress-fill" id="progressBar"></div>
+    </div>
+
+    <p class="question-text" id="questionText"></p>
+
+    <div class="options" id="optionsContainer"></div>
+
+    <p class="feedback" id="feedback"></p>
+
+    <button class="btn-primary" id="nextBtn" onclick="nextQuestion()">Next</button>
+  </div>
+
+  <!-- RESULT SCREEN -->
+  <div id="resultScreen">
+    <h2>Quiz Complete</h2>
+    <div class="score-display" id="finalScore"></div>
+    <p class="score-pct" id="scorePct"></p>
+    <p class="result-msg" id="resultMsg"></p>
+    <button class="btn-primary" onclick="restartQuiz()">Try Again</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
